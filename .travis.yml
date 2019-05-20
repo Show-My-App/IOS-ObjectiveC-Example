@@ -10,8 +10,8 @@
 language: objective-c
 
 # install xcode and simulator
-osx_image: xcode7.2
-xcode_sdk: iphonesimulator9.2
+osx_image: xcode10.2.1
+xcode_sdk: iphonesimulator12.2
 
 # do some operate beafore running
 before_install:
