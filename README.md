@@ -1,8 +1,8 @@
 
 # Show My App
 ###### Share your App Better, Faster, Easier!
-![IN DEV](https://img.shields.io/badge/😀-usable-green.svg)
-![IN DEV](https://img.shields.io/badge/⚠️-continous development-orange.svg)
+![IN DEV](https://img.shields.io/badge/Master-usable-green.svg)
+![IN DEV](https://img.shields.io/badge/Statut-continous%20integration-orange.svg)
 
 ## To clone in your desktop
 - open "Terminal.app" (OSX) or "cmd.exe" (WIN)
