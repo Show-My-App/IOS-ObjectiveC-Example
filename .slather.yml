@@ -1,0 +1,11 @@
+# *************************
+# *** HephaisCode 2016© ***
+# *************************
+
+ci_service: travis_ci
+coverage_service: coveralls
+xcodeproj: show-my-app.xcodeproj
+source_directory: show-my-app
+ignore:
+- Distribution
+- Dependencies

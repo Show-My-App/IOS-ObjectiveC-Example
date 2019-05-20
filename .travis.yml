@@ -1,0 +1,58 @@
+# *************************
+# *** HephaisCode 2016© ***
+# *************************
+
+# see documentation
+# https://docs.travis-ci.com/user/customizing-the-build/
+# https://docs.travis-ci.com/user/languages/objective-c
+
+# define language
+language: objective-c
+
+# install xcode and simulator
+osx_image: xcode7.2
+xcode_sdk: iphonesimulator9.2
+
+# do some operate beafore running
+before_install:
+# download slather (to send coverage to http://coveralls.io)
+- gem install slather --no-rdoc --no-ri --no-document --quiet
+
+# define command install
+install:
+# update sub-module of git repo
+- git submodule update --init --recursive
+
+# define command before script
+before_script:
+
+# define command script
+script:
+# Don't forgot to share your schemes /!\
+# List possibilities (use to show in travis console)
+- echo "*** list scheme *** "
+- xcodebuild -project show-my-app.xcodeproj -list
+# Run n°1
+- echo "*** CI n°1 *** "
+- echo "*** build and test *** "
+- xcodebuild -project show-my-app.xcodeproj -scheme show-my-app -configuration Travis -sdk iphonesimulator -enableCodeCoverage YES -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.2' build test
+
+# define command after success
+after_success:
+# run slather to send to coveralls (it's define in .slather.yml)
+- slather
+
+# define command after failure
+after_failure:
+
+#define command before deploy (optional)
+before_deploy:
+
+#define command deploy (optional)
+deploy:
+
+#define command after deploy (optional)
+after_deploy:
+
+# define command after script
+after_script:
