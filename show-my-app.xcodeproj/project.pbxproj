@@ -15,6 +15,7 @@
 		C760EBE322918CAE0011B222 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C760EBE222918CAE0011B222 /* main.m */; };
 		C760EBED22918CAE0011B222 /* show_my_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C760EBEC22918CAE0011B222 /* show_my_appTests.m */; };
 		C760EBF822918CAE0011B222 /* show_my_appUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C760EBF722918CAE0011B222 /* show_my_appUITests.m */; };
+		C7C231852292B05800A16E76 /* Show-My-App.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C231802292B05800A16E76 /* Show-My-App.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		C7C231762292A55800A16E76 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		C7C231772292A58E00A16E76 /* .slather.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .slather.yml; sourceTree = "<group>"; };
 		C7C231782292A5A100A16E76 /* .coveralls.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .coveralls.yml; sourceTree = "<group>"; };
+		C7C231802292B05800A16E76 /* Show-My-App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Show-My-App.m"; sourceTree = "<group>"; };
+		C7C231832292B05800A16E76 /* Show-My-App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Show-My-App.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 		C760EBD222918CAD0011B222 /* show-my-app */ = {
 			isa = PBXGroup;
 			children = (
+				C7C2317F2292B05800A16E76 /* Sub-Module */,
 				C760EBD322918CAD0011B222 /* AppDelegate.h */,
 				C760EBD422918CAD0011B222 /* AppDelegate.m */,
 				C760EBD622918CAD0011B222 /* ViewController.h */,
@@ -136,6 +140,15 @@
 				C760EBF922918CAE0011B222 /* Info.plist */,
 			);
 			path = "show-my-appUITests";
+			sourceTree = "<group>";
+		};
+		C7C2317F2292B05800A16E76 /* Sub-Module */ = {
+			isa = PBXGroup;
+			children = (
+				C7C231832292B05800A16E76 /* Show-My-App.h */,
+				C7C231802292B05800A16E76 /* Show-My-App.m */,
+			);
+			path = "Sub-Module";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +283,7 @@
 			files = (
 				C760EBD822918CAD0011B222 /* ViewController.m in Sources */,
 				C760EBE322918CAE0011B222 /* main.m in Sources */,
+				C7C231852292B05800A16E76 /* Show-My-App.m in Sources */,
 				C760EBD522918CAD0011B222 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

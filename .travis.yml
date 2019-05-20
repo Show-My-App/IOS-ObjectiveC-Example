@@ -35,7 +35,7 @@ script:
 # Run n°1
 - echo "*** CI n°1 *** "
 - echo "*** build and test *** "
-- xcodebuild -project show-my-app.xcodeproj -scheme show-my-app -configuration Travis -sdk iphonesimulator -enableCodeCoverage YES -destination 'platform=iOS Simulator,name=iPhone 6,OS=12.2' build test
+- xcodebuild -project show-my-app.xcodeproj -scheme show-my-app -configuration Travis -sdk iphonesimulator -enableCodeCoverage YES -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.4' build test
 
 # define command after success
 after_success:
