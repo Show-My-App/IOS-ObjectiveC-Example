@@ -11,7 +11,7 @@ language: objective-c
 
 # install xcode and simulator
 osx_image: xcode10.2.1
-xcode_sdk: iphonesimulator12.2
+xcode_sdk: iphonesimulator11.1
 
 # do some operate beafore running
 before_install:
@@ -35,7 +35,7 @@ script:
 # Run n°1
 - echo "*** CI n°1 *** "
 - echo "*** build and test *** "
-- xcodebuild -project show-my-app.xcodeproj -scheme show-my-app -configuration Travis -sdk iphonesimulator -enableCodeCoverage YES -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.4' build test
+- xcodebuild -project show-my-app.xcodeproj -scheme show-my-app -configuration Travis -sdk iphonesimulator -enableCodeCoverage YES -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.1' build test
 
 # define command after success
 after_success:
