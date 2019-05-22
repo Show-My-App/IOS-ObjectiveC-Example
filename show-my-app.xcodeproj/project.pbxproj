@@ -15,6 +15,8 @@
 		C760EBE322918CAE0011B222 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C760EBE222918CAE0011B222 /* main.m */; };
 		C760EBED22918CAE0011B222 /* show_my_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C760EBEC22918CAE0011B222 /* show_my_appTests.m */; };
 		C760EBF822918CAE0011B222 /* show_my_appUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C760EBF722918CAE0011B222 /* show_my_appUITests.m */; };
+		C78AAAE6229566B700FA0675 /* ShowMyAppRequestURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C78AAAE5229566B700FA0675 /* ShowMyAppRequestURL.m */; };
+		C78AAAE9229566D200FA0675 /* ShowMyAppRequestQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = C78AAAE8229566D200FA0675 /* ShowMyAppRequestQRCode.m */; };
 		C79026CD2293002C00C05CD7 /* ShowMyAppTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79026CB2293002C00C05CD7 /* ShowMyAppTestController.m */; };
 		C79026CE2293002C00C05CD7 /* ShowMyAppTestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79026CC2293002C00C05CD7 /* ShowMyAppTestController.xib */; };
 		C79026D122930CC000C05CD7 /* ShowMyAppRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C79026D022930CC000C05CD7 /* ShowMyAppRequest.m */; };
@@ -61,6 +63,10 @@
 		C760EBF322918CAE0011B222 /* show-my-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "show-my-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C760EBF722918CAE0011B222 /* show_my_appUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = show_my_appUITests.m; sourceTree = "<group>"; };
 		C760EBF922918CAE0011B222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C78AAAE4229566B700FA0675 /* ShowMyAppRequestURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowMyAppRequestURL.h; sourceTree = "<group>"; };
+		C78AAAE5229566B700FA0675 /* ShowMyAppRequestURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowMyAppRequestURL.m; sourceTree = "<group>"; };
+		C78AAAE7229566D200FA0675 /* ShowMyAppRequestQRCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowMyAppRequestQRCode.h; sourceTree = "<group>"; };
+		C78AAAE8229566D200FA0675 /* ShowMyAppRequestQRCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowMyAppRequestQRCode.m; sourceTree = "<group>"; };
 		C79026CA2293002C00C05CD7 /* ShowMyAppTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowMyAppTestController.h; sourceTree = "<group>"; };
 		C79026CB2293002C00C05CD7 /* ShowMyAppTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowMyAppTestController.m; sourceTree = "<group>"; };
 		C79026CC2293002C00C05CD7 /* ShowMyAppTestController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowMyAppTestController.xib; sourceTree = "<group>"; };
@@ -174,6 +180,10 @@
 				C79026D22293E25100C05CD7 /* ShowMyAppBanner.png */,
 				C79026CF22930CC000C05CD7 /* ShowMyAppRequest.h */,
 				C79026D022930CC000C05CD7 /* ShowMyAppRequest.m */,
+				C78AAAE4229566B700FA0675 /* ShowMyAppRequestURL.h */,
+				C78AAAE5229566B700FA0675 /* ShowMyAppRequestURL.m */,
+				C78AAAE7229566D200FA0675 /* ShowMyAppRequestQRCode.h */,
+				C78AAAE8229566D200FA0675 /* ShowMyAppRequestQRCode.m */,
 				C7C231832292B05800A16E76 /* ShowMyApp.h */,
 				C7C231802292B05800A16E76 /* ShowMyApp.m */,
 				C79026D4229401C700C05CD7 /* ShowMyAppViewController.h */,
@@ -327,7 +337,9 @@
 				C760EBD822918CAD0011B222 /* ViewController.m in Sources */,
 				C760EBE322918CAE0011B222 /* main.m in Sources */,
 				C79026CD2293002C00C05CD7 /* ShowMyAppTestController.m in Sources */,
+				C78AAAE6229566B700FA0675 /* ShowMyAppRequestURL.m in Sources */,
 				C7C231852292B05800A16E76 /* ShowMyApp.m in Sources */,
+				C78AAAE9229566D200FA0675 /* ShowMyAppRequestQRCode.m in Sources */,
 				C760EBD522918CAD0011B222 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
