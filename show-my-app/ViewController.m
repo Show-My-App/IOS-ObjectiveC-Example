@@ -46,9 +46,7 @@
 }
 
 -(IBAction)ShareViewController:(id)sSender {
-    ShowMyAppViewController *tShowMyAppViewController = [[ShowMyAppViewController alloc] initWithNibName:@"ShowMyAppViewController" bundle:[NSBundle mainBundle]];
-    [tShowMyAppViewController Install:[self FormAnalyze]];
-    [tShowMyAppViewController setTitle:@"In App"];
+    ShowMyAppViewController *tShowMyAppViewController = [ShowMyAppViewController CreateViewController:[self FormAnalyze]];
     [[self navigationController] presentViewController:tShowMyAppViewController animated:YES completion:nil];
 }
 

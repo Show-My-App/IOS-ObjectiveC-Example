@@ -7,6 +7,8 @@
 //
 
 #import "ExplainViewController.h"
+#import "ShowMyApp.h"
+#import "ShowMyAppViewController.h"
 
 @interface ExplainViewController ()
 
@@ -19,14 +21,30 @@
     // Do any additional setup after loading the view.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(IBAction)ShareMe:(id)sender {
+    //NSLog(@" %s line %d",__FUNCTION__, __LINE__);
+    ShowMyApp *tShowMyAppInstance = [[ShowMyApp alloc] init];
+    ShowMyAppViewController *tShowMyAppViewController = [ShowMyAppViewController CreateViewController:tShowMyAppInstance];
+    [[self navigationController] presentViewController:tShowMyAppViewController animated:YES completion:nil];
 }
-*/
+
+-(IBAction)TestOne:(id)sender {
+    //NSLog(@" %s line %d",__FUNCTION__, __LINE__);
+    ShowMyApp *tShowMyAppInstance = [[ShowMyApp alloc] init];
+    ShowMyAppViewController *tShowMyAppViewController = [ShowMyAppViewController CreateViewController:tShowMyAppInstance];
+    [[self navigationController] presentViewController:tShowMyAppViewController animated:YES completion:nil];
+}
+-(IBAction)TestTwo:(id)sender {
+    //NSLog(@" %s line %d",__FUNCTION__, __LINE__);
+    ShowMyApp *tShowMyAppInstance = [[ShowMyApp alloc] init];
+    ShowMyAppViewController *tShowMyAppViewController = [ShowMyAppViewController CreateViewController:tShowMyAppInstance];
+    [[self navigationController] presentViewController:tShowMyAppViewController animated:YES completion:nil];
+}
+-(IBAction)TestThree:(id)sender {
+    //NSLog(@" %s line %d",__FUNCTION__, __LINE__);
+    ShowMyApp *tShowMyAppInstance = [[ShowMyApp alloc] init];
+    ShowMyAppViewController *tShowMyAppViewController = [ShowMyAppViewController CreateViewController:tShowMyAppInstance];
+     [[self navigationController] presentViewController:tShowMyAppViewController animated:YES completion:nil];
+}
 
 @end

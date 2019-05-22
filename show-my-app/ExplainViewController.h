@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ExplainViewController : UIViewController
 
+-(IBAction)TestOne:(id)sender;
+-(IBAction)TestTwo:(id)sender;
+-(IBAction)TestThree:(id)sender;
+
 @end
 
 NS_ASSUME_NONNULL_END

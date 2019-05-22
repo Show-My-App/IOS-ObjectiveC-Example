@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMC-5s-8rY">
-                                <rect key="frame" x="20" y="433" width="374" height="30"/>
+                                <rect key="frame" x="190" y="433" width="34" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="urz-kx-PRz"/>
                                 </constraints>
@@ -28,23 +28,77 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="wTb-CV-cAd"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOy-Jv-QsV">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LOy-Jv-QsV">
                                 <rect key="frame" x="20" y="116" width="374" height="309"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="201-dh-YvN">
+                                <rect key="frame" x="20" y="832" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="RJo-vg-0uT"/>
+                                    <constraint firstAttribute="height" constant="30" id="wgD-dq-oeP"/>
+                                </constraints>
+                                <state key="normal" title="Example A"/>
+                                <connections>
+                                    <action selector="TestOne:" destination="Ipe-qO-tvK" eventType="touchUpInside" id="BKT-Aw-tMi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvl-eG-1Ta">
+                                <rect key="frame" x="167" y="832" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Uk1-Jb-Qfv"/>
+                                    <constraint firstAttribute="height" constant="30" id="lYy-DU-4tK"/>
+                                </constraints>
+                                <state key="normal" title="Example B"/>
+                                <connections>
+                                    <action selector="TestTwo:" destination="Ipe-qO-tvK" eventType="touchUpInside" id="0Xu-Z9-POd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHv-Xm-02g">
+                                <rect key="frame" x="314" y="832" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="htI-Xe-LsH"/>
+                                    <constraint firstAttribute="height" constant="30" id="ud3-3Y-Ffp"/>
+                                </constraints>
+                                <state key="normal" title="Example C"/>
+                                <connections>
+                                    <action selector="TestThree:" destination="Ipe-qO-tvK" eventType="touchUpInside" id="IQk-rP-qEW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3b-aQ-kiZ">
+                                <rect key="frame" x="127" y="471" width="160" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="Kr1-T1-sLc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="YOc-bk-acA"/>
+                                    <constraint firstAttribute="height" constant="30" id="pJn-Um-vmQ"/>
+                                </constraints>
+                                <state key="normal" title="Share Show-My-App"/>
+                                <connections>
+                                    <action selector="ShareMe:" destination="Ipe-qO-tvK" eventType="touchUpInside" id="8jx-oO-lba"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="qbY-eK-CWW" firstAttribute="bottom" secondItem="Pvl-eG-1Ta" secondAttribute="bottom" id="8Ev-QI-Bst"/>
+                            <constraint firstItem="Pvl-eG-1Ta" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="201-dh-YvN" secondAttribute="trailing" constant="8" symbolic="YES" id="8bL-bF-aLQ"/>
+                            <constraint firstItem="LOy-Jv-QsV" firstAttribute="top" secondItem="qbY-eK-CWW" secondAttribute="top" constant="28" id="B5g-fS-Jf6"/>
                             <constraint firstItem="qMC-5s-8rY" firstAttribute="centerX" secondItem="enu-Rz-CPc" secondAttribute="centerX" id="GPW-HB-RfS"/>
+                            <constraint firstItem="201-dh-YvN" firstAttribute="bottom" secondItem="qbY-eK-CWW" secondAttribute="bottom" id="HFe-So-G13"/>
+                            <constraint firstItem="201-dh-YvN" firstAttribute="leading" secondItem="qbY-eK-CWW" secondAttribute="leading" constant="20" id="MUR-Ar-ZfR"/>
                             <constraint firstItem="qbY-eK-CWW" firstAttribute="trailing" secondItem="LOy-Jv-QsV" secondAttribute="trailing" constant="20" id="S6X-yd-dJE"/>
-                            <constraint firstItem="qMC-5s-8rY" firstAttribute="leading" secondItem="qbY-eK-CWW" secondAttribute="leading" constant="20" id="Ykh-SE-29v"/>
+                            <constraint firstItem="qbY-eK-CWW" firstAttribute="trailing" secondItem="xHv-Xm-02g" secondAttribute="trailing" constant="20" id="VOX-jk-EFG"/>
+                            <constraint firstItem="xHv-Xm-02g" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Pvl-eG-1Ta" secondAttribute="trailing" constant="8" symbolic="YES" id="YtD-tD-1yx"/>
                             <constraint firstItem="LOy-Jv-QsV" firstAttribute="leading" secondItem="qbY-eK-CWW" secondAttribute="leading" constant="20" id="dxL-15-1BI"/>
+                            <constraint firstItem="Pvl-eG-1Ta" firstAttribute="centerX" secondItem="enu-Rz-CPc" secondAttribute="centerX" id="ksY-2I-u7T"/>
+                            <constraint firstItem="u3b-aQ-kiZ" firstAttribute="centerX" secondItem="enu-Rz-CPc" secondAttribute="centerX" id="lW4-f0-HeV"/>
                             <constraint firstItem="qMC-5s-8rY" firstAttribute="centerY" secondItem="enu-Rz-CPc" secondAttribute="centerY" id="ll3-GT-Iuf"/>
+                            <constraint firstItem="xHv-Xm-02g" firstAttribute="bottom" secondItem="qbY-eK-CWW" secondAttribute="bottom" id="pNa-pL-nfB"/>
+                            <constraint firstItem="u3b-aQ-kiZ" firstAttribute="top" secondItem="qMC-5s-8rY" secondAttribute="bottom" constant="8" id="qVi-tK-L0q"/>
                             <constraint firstItem="qMC-5s-8rY" firstAttribute="top" secondItem="LOy-Jv-QsV" secondAttribute="bottom" constant="8" id="tlU-B4-Myi"/>
-                            <constraint firstItem="qbY-eK-CWW" firstAttribute="trailing" secondItem="qMC-5s-8rY" secondAttribute="trailing" constant="20" id="y2X-yh-Pjq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qbY-eK-CWW"/>
                     </view>
