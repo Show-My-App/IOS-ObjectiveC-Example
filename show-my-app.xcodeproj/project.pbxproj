@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C72E1399229D6D54008D9978 /* ShowMyApp.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C72E1398229D6D54008D9978 /* ShowMyApp.xcassets */; };
 		C760EBD522918CAD0011B222 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C760EBD422918CAD0011B222 /* AppDelegate.m */; };
 		C760EBD822918CAD0011B222 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C760EBD722918CAD0011B222 /* ViewController.m */; };
 		C760EBDB22918CAD0011B222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C760EBD922918CAD0011B222 /* Main.storyboard */; };
@@ -22,7 +23,6 @@
 		C79026D122930CC000C05CD7 /* ShowMyAppRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C79026D022930CC000C05CD7 /* ShowMyAppRequest.m */; };
 		C79026D7229401C700C05CD7 /* ShowMyAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79026D5229401C700C05CD7 /* ShowMyAppViewController.m */; };
 		C79026D8229401C700C05CD7 /* ShowMyAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79026D6229401C700C05CD7 /* ShowMyAppViewController.xib */; };
-		C796DC142296DBD700B81CAC /* ShowMyApp.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C796DC132296DBD700B81CAC /* ShowMyApp.xcassets */; };
 		C7C231852292B05800A16E76 /* ShowMyApp.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C231802292B05800A16E76 /* ShowMyApp.m */; };
 		C7F3D89622942F200062C4EA /* ExplainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F3D89522942F200062C4EA /* ExplainViewController.m */; };
 /* End PBXBuildFile section */
@@ -45,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C72E1398229D6D54008D9978 /* ShowMyApp.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ShowMyApp.xcassets; sourceTree = "<group>"; };
 		C760EBD022918CAD0011B222 /* show-my-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "show-my-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C760EBD322918CAD0011B222 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C760EBD422918CAD0011B222 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,7 +74,6 @@
 		C79026D4229401C700C05CD7 /* ShowMyAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowMyAppViewController.h; sourceTree = "<group>"; };
 		C79026D5229401C700C05CD7 /* ShowMyAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowMyAppViewController.m; sourceTree = "<group>"; };
 		C79026D6229401C700C05CD7 /* ShowMyAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowMyAppViewController.xib; sourceTree = "<group>"; };
-		C796DC132296DBD700B81CAC /* ShowMyApp.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ShowMyApp.xcassets; sourceTree = "<group>"; };
 		C7C231762292A55800A16E76 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		C7C231772292A58E00A16E76 /* .slather.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .slather.yml; sourceTree = "<group>"; };
 		C7C231782292A5A100A16E76 /* .coveralls.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .coveralls.yml; sourceTree = "<group>"; };
@@ -171,7 +171,7 @@
 		C7C2317F2292B05800A16E76 /* Sub-Module */ = {
 			isa = PBXGroup;
 			children = (
-				C796DC132296DBD700B81CAC /* ShowMyApp.xcassets */,
+				C72E1398229D6D54008D9978 /* ShowMyApp.xcassets */,
 				C7C231832292B05800A16E76 /* ShowMyApp.h */,
 				C7C231802292B05800A16E76 /* ShowMyApp.m */,
 				C79026CF22930CC000C05CD7 /* ShowMyAppRequest.h */,
@@ -295,7 +295,7 @@
 			files = (
 				C79026CE2293002C00C05CD7 /* ShowMyAppTestController.xib in Resources */,
 				C79026D8229401C700C05CD7 /* ShowMyAppViewController.xib in Resources */,
-				C796DC142296DBD700B81CAC /* ShowMyApp.xcassets in Resources */,
+				C72E1399229D6D54008D9978 /* ShowMyApp.xcassets in Resources */,
 				C760EBE022918CAE0011B222 /* LaunchScreen.storyboard in Resources */,
 				C760EBDD22918CAE0011B222 /* Assets.xcassets in Resources */,
 				C760EBDB22918CAD0011B222 /* Main.storyboard in Resources */,
