@@ -20,9 +20,9 @@
 		C79026CD2293002C00C05CD7 /* ShowMyAppTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79026CB2293002C00C05CD7 /* ShowMyAppTestController.m */; };
 		C79026CE2293002C00C05CD7 /* ShowMyAppTestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79026CC2293002C00C05CD7 /* ShowMyAppTestController.xib */; };
 		C79026D122930CC000C05CD7 /* ShowMyAppRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C79026D022930CC000C05CD7 /* ShowMyAppRequest.m */; };
-		C79026D32293E25100C05CD7 /* ShowMyAppBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = C79026D22293E25100C05CD7 /* ShowMyAppBanner.png */; };
 		C79026D7229401C700C05CD7 /* ShowMyAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C79026D5229401C700C05CD7 /* ShowMyAppViewController.m */; };
 		C79026D8229401C700C05CD7 /* ShowMyAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C79026D6229401C700C05CD7 /* ShowMyAppViewController.xib */; };
+		C796DC142296DBD700B81CAC /* ShowMyApp.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C796DC132296DBD700B81CAC /* ShowMyApp.xcassets */; };
 		C7C231852292B05800A16E76 /* ShowMyApp.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C231802292B05800A16E76 /* ShowMyApp.m */; };
 		C7F3D89622942F200062C4EA /* ExplainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F3D89522942F200062C4EA /* ExplainViewController.m */; };
 /* End PBXBuildFile section */
@@ -70,10 +70,10 @@
 		C79026CC2293002C00C05CD7 /* ShowMyAppTestController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowMyAppTestController.xib; sourceTree = "<group>"; };
 		C79026CF22930CC000C05CD7 /* ShowMyAppRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMyAppRequest.h; sourceTree = "<group>"; };
 		C79026D022930CC000C05CD7 /* ShowMyAppRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMyAppRequest.m; sourceTree = "<group>"; };
-		C79026D22293E25100C05CD7 /* ShowMyAppBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShowMyAppBanner.png; sourceTree = "<group>"; };
 		C79026D4229401C700C05CD7 /* ShowMyAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowMyAppViewController.h; sourceTree = "<group>"; };
 		C79026D5229401C700C05CD7 /* ShowMyAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowMyAppViewController.m; sourceTree = "<group>"; };
 		C79026D6229401C700C05CD7 /* ShowMyAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowMyAppViewController.xib; sourceTree = "<group>"; };
+		C796DC132296DBD700B81CAC /* ShowMyApp.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ShowMyApp.xcassets; sourceTree = "<group>"; };
 		C7C231762292A55800A16E76 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		C7C231772292A58E00A16E76 /* .slather.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .slather.yml; sourceTree = "<group>"; };
 		C7C231782292A5A100A16E76 /* .coveralls.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .coveralls.yml; sourceTree = "<group>"; };
@@ -171,15 +171,15 @@
 		C7C2317F2292B05800A16E76 /* Sub-Module */ = {
 			isa = PBXGroup;
 			children = (
-				C79026D22293E25100C05CD7 /* ShowMyAppBanner.png */,
+				C796DC132296DBD700B81CAC /* ShowMyApp.xcassets */,
+				C7C231832292B05800A16E76 /* ShowMyApp.h */,
+				C7C231802292B05800A16E76 /* ShowMyApp.m */,
 				C79026CF22930CC000C05CD7 /* ShowMyAppRequest.h */,
 				C79026D022930CC000C05CD7 /* ShowMyAppRequest.m */,
 				C78AAAE4229566B700FA0675 /* ShowMyAppRequestURL.h */,
 				C78AAAE5229566B700FA0675 /* ShowMyAppRequestURL.m */,
 				C78AAAE7229566D200FA0675 /* ShowMyAppRequestQRCode.h */,
 				C78AAAE8229566D200FA0675 /* ShowMyAppRequestQRCode.m */,
-				C7C231832292B05800A16E76 /* ShowMyApp.h */,
-				C7C231802292B05800A16E76 /* ShowMyApp.m */,
 				C79026D4229401C700C05CD7 /* ShowMyAppViewController.h */,
 				C79026D5229401C700C05CD7 /* ShowMyAppViewController.m */,
 				C79026D6229401C700C05CD7 /* ShowMyAppViewController.xib */,
@@ -295,8 +295,8 @@
 			files = (
 				C79026CE2293002C00C05CD7 /* ShowMyAppTestController.xib in Resources */,
 				C79026D8229401C700C05CD7 /* ShowMyAppViewController.xib in Resources */,
+				C796DC142296DBD700B81CAC /* ShowMyApp.xcassets in Resources */,
 				C760EBE022918CAE0011B222 /* LaunchScreen.storyboard in Resources */,
-				C79026D32293E25100C05CD7 /* ShowMyAppBanner.png in Resources */,
 				C760EBDD22918CAE0011B222 /* Assets.xcassets in Resources */,
 				C760EBDB22918CAD0011B222 /* Main.storyboard in Resources */,
 			);
